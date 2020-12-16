@@ -6,6 +6,11 @@ lista.push(surname);
 var listaAggiornata = document.getElementById("output");
 //Inserimento (Stampa) risultato (lista aggiornata e Ordinata Alfabeticamente(a mezzo 'sort')) nel Div HTML richiamato:
 listaAggiornata.innerHTML = lista.sort();
+var aggiornamento = lista.sort();
 
 
 // console.log('lista aggiornata: ' + lista.push('surname'));
+var inOrdine = document.getElementById('ordine');
+for ( var i=0; i < aggiornamento.length; i++ ) {
+  inOrdine.innerHTML += '<li>' + aggiornamento[i] + '</li>'; 
+}
