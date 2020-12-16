@@ -4,7 +4,7 @@ var lista = ['Aranzulla', 'Dionigi', 'Conte', 'Casamassima', 'Carone', 'Decandia
 lista.push(surname);
 //Richiamo Div HTML:
 var listaAggiornata = document.getElementById("output");
-//Inserimento (Stampa) risultato (lista aggiornata e Ordinata Alfabeticamente) nel Div HTML richiamato:
+//Inserimento (Stampa) risultato (lista aggiornata e Ordinata Alfabeticamente(a mezzo 'sort')) nel Div HTML richiamato:
 listaAggiornata.innerHTML = lista.sort();
 
 
