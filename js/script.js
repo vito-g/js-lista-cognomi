@@ -1,5 +1,7 @@
 var surname = prompt('Inserisci il tuo cognome.');
 var lista = ['Aranzulla', 'Dionigi', 'Conte', 'Casamassima', 'Carone', 'Decandia', 'Saponaro', 'Zaccaria', 'Tramutoli'];
+
+if (surname) {
 //Istruzione per Aggiunta in Lista del Cognome Utente:
 lista.push(surname);
 //Richiamo Div HTML attraverso var ad esso assegnata:
@@ -21,3 +23,6 @@ var posizione = posizioneArray + 1;
 console.log(surname + ' occupa la posizione numero ' + posizione + ' all\'interno della lista.' );
 var outputPosition = document.getElementById('position');
 outputPosition.innerText = 'Il cognome ' + surname + ' occupa la posizione numero ' + posizione;
+} else {
+  alert('Il campo è rimasto vuoto');
+}
