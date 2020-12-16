@@ -20,4 +20,4 @@ console.log(surname + ' ha indice ' + posizioneArray + ' all\'interno dell\'arra
 var posizione = posizioneArray + 1;
 console.log(surname + ' occupa la posizione numero ' + posizione + ' all\'interno della lista.' );
 var outputPosition = document.getElementById('position');
-outputPosition.innerText = 'Il cognome utente occupa la posizione numero ' + posizione;
+outputPosition.innerText = 'Il cognome ' + surname + ' occupa la posizione numero ' + posizione;
