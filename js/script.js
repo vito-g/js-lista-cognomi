@@ -1,4 +1,5 @@
-var surname = prompt('Inserisci il tuo cognome.');
+var cognome = prompt('Inserisci il tuo cognome.');
+var surname = cognome.toUpperCase();
 var lista = ['Aranzulla', 'Dionigi', 'Conte', 'Casamassima', 'Carone', 'Decandia', 'Saponaro', 'Zaccaria', 'Tramutoli'];
 
 if (surname) {
