@@ -1,18 +1,20 @@
 var cognome = prompt('Inserisci il tuo cognome.');
 var surname = cognome.toUpperCase();
-var lista = ['Aranzulla', ' Dionigi', ' Conte', ' Casamassima', ' Carone', ' Decandia', ' Saponaro', ' Zaccaria', ' Tramutoli'];
+var lista = ['Aranzulla', 'Dionigi', 'Conte', 'Casamassima', 'Carone', 'Decandia', 'Saponaro', 'Zaccaria', 'Tramutoli'];
 var listaUppercased = lista.map(name => name.toUpperCase());
-
+console.log(listaUppercased);
 if (surname) {
 //Istruzione per Aggiunta in Lista del Cognome Utente:
 listaUppercased.push(surname);
+console.log(listaUppercased);
 //Richiamo Div HTML attraverso var ad esso assegnata:
 var listaAggiornata = document.getElementById("output");
-//Inserimento (Stampa) risultato (lista aggiornata e Ordinata Alfabeticamente(a mezzo 'sort')) nel Div HTML richiamato:
+//Inserimento (Stampa) risultato (lista Aggiornata e Ordinata Alfabeticamente(a mezzo 'sort')) nel Div HTML richiamato:
 listaAggiornata.innerHTML = listaUppercased.sort();
+console.log(listaUppercased);
 var aggiornamento = listaUppercased.sort();
 var inOrdine = document.getElementById('ordine');
-console.log(listaUppercased);
+
 for ( var i=0; i < aggiornamento.length; i++ ) {
   //Crea un Item per ogni voce della lista (precedentemente aggiornata ed ordinata) e lo inserisce all'interno dell Ul richiamata dalla var inOrdine dichiarata appena sopra:
   inOrdine.innerHTML += '<li>' + aggiornamento[i] + '</li>';
